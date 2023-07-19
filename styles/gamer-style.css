@@ -169,7 +169,7 @@ main {
 
 }
 
-.oo {
+ .oo {
     display: inline-block;
     margin-right: 20px;
 }
@@ -181,6 +181,40 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.oo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.oo:hover img {
+    opacity: 0.8;
+}
+
+.oo:hover .overlay {
+    opacity: 1;
+}
+
+.oo .overlay img {
+    width: 50px;
+    height: 50px;
+}
+
+.oo .overlay-text {
+    color: pink;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 /*section online game style*/
@@ -196,12 +230,6 @@ main {
     margin-right: 10px;
 }
 
-/*.overlay-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
 .heading-1 {
     text-align: right;
     font-size: 45px;
@@ -238,11 +266,12 @@ main {
 }
 
 /*section-4 style*/
-.section-4{
+.section-4 {
     margin-top: 10px;
     padding-bottom: 100px;
     padding-top: 0;
 }
+
 .img-btn-2>button {
     border-radius: 50px;
     background: #FFF;
@@ -253,41 +282,43 @@ main {
     align-items: center;
     gap: 20px;
 }
-.img-btn-2 > img{
+
+.img-btn-2>img {
     display: flex;
 }
 
 .img-btn-2 {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .img-btn-2 button {
     position: relative;
     overflow: hidden;
-    background-color:transparent;
-    border:0;
+    background-color: transparent;
+    border: 0;
     padding: 0;
     cursor: pointer;
     transition: transform 0.3s;
-  }
-  
-  .img-btn-2 button img {
+}
+
+.img-btn-2 button img {
     display: block;
-    
-     transition: opacity 0.3s;
-  }
-  
-  .img-btn-2 button:hover {
+
+    transition: opacity 0.3s;
+}
+
+.img-btn-2 button:hover {
     transform: translateY(-5px);
-    border: 2px solid  #FF42A5;
+    border: 2px solid #FF42A5;
     color: #FF42A5;
-  }
-  
-  .img-btn-2 button:hover img {
+}
+
+.img-btn-2 button:hover img {
     opacity: 0.8;
-  }
-  
+}
+
 
 /*footer style*/
 .footer {
