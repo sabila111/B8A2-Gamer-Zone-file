@@ -159,7 +159,6 @@ main {
     font-size: 18px;
     font-weight: 400;
 }
-
 .game-image {
    
     display: flex;
@@ -169,11 +168,23 @@ main {
     margin-right: 200px;
 
 }
-
- .oo {
+.oo{
     display: inline-block;
     margin-right: 20px;
     position: relative;
+    height: 350px;
+    width: 280px; 
+}
+ .oo > img {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    height: 350px;
+    width: 280px;
+    
+}
+.oo > p{
+    text-align: center;
 }
 .oo .overlay {
     position: absolute;
@@ -191,24 +202,24 @@ main {
     border-radius: 16px;
   }
   
-  .oo:hover img {
+ .oo:hover img {
     opacity: 0.8;
   }
   
-  .oo:hover .overlay {
+ .oo:hover .overlay {
     opacity: 1;
   }
   
-  .oo .overlay .overlay-2 {
+ .oo .overlay .overlay-2 {
     text-align: center;
   }
   
-  .oo .overlay .overlay-2 img {
+.oo .overlay .overlay-2 img {
     width: 50px; 
     height: auto; 
   }
   
-  .oo .overlay .overlay-2 .overlay-text {
+ .oo .overlay .overlay-2 .overlay-text {
     color: pink; 
     font-size: 16px;
     margin-top: 10px;
@@ -221,7 +232,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .section-2{
