@@ -20,4 +20,7 @@
    .nav-items-container-2{
     margin-top: 40px;
    }
+   .section{
+    flex-direction: column;
+   }
  }
